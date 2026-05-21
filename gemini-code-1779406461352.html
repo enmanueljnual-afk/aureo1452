@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aureo 1452 · Piso 4 Ambientes · San Fernando</title>
+<meta name="description" content="Piso de 4 ambientes con concepto único en el corazón de San Fernando. Dormitorio principal en suite, cochera fija incluida. Aureo Desarrollos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --n:#080809; --g1:#161619; --g2:#1d1d22; --g3:#26262d;
+  --o:#c4a25a; --o2:#dfc07e;
+  --w:#f2ede4; --wt:rgba(242,237,228,0.65); --wt2:rgba(242,237,228,0.28);
+  --serif:'Playfair Display',Georgia,serif;
+  --sans:'Jost',system-ui,sans-serif;
+  --ease:cubic-bezier(0.25,0.46,0.45,0.94);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--n);color:var(--w);font-family:var(--sans);overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+button,a{font-family:var(--sans);cursor:pointer;text-decoration:none;}
+
+/* TOPBAR */
+.topbar{background:var(--o);color:var(--n);text-align:center;padding:9px 20px;font-size:10px;letter-spacing:0.28em;font-weight:500;}
+
+/* NAV */
+nav{position:fixed;top:36px;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:18px 56px;transition:all 0.4s var(--ease);}
+nav.sc{top:0;background:rgba(8,8,9,0.97);backdrop-filter:blur(16px);border-bottom:1px solid rgba(196,162,90,0.1);}
+.nav-logo{font-family:var(--serif);font-size:18px;letter-spacing:0.18em;color:var(--w);font-weight:400;}
+.nav-logo sup{font-size:10px;color:var(--o);vertical-align:super;}
+.nav-links{display:flex;gap:36px;}
+.nav-links a{font-size:11px;letter-spacing:0.18em;color:var(--wt);font-weight:300;transition:color 0.2s;}
+.nav-links a:hover{color:var(--o);}
+.nav-cta{border:1px solid rgba(196,162,90,0.55);color:var(--o);font-size:10px;letter-spacing:0.22em;font-weight:500;padding:10px 24px;background:transparent;transition:all 0.25s;}
+.nav-cta:hover{background:var(--o);color:var(--n);}
+
+/* HERO — sin imagen, puro CSS */
+.hero{
+  min-height:100vh;position:relative;
+  display:flex;flex-direction:column;justify-content:flex-end;
+  padding:0 56px 80px;
+  background:linear-gradient(135deg,#080809 0%,#0e0e12 50%,#13120f 100%);
+  overflow:hidden;
+}
+/* Textura geométrica decorativa */
+.hero::before{
+  content:'';position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(196,162,90,0.03) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(196,162,90,0.03) 1px,transparent 1px);
+  background-size:60px 60px;
+  z-index:0;
+}
+.hero::after{
+  content:'';position:absolute;bottom:0;left:0;right:0;height:50%;
+  background:linear-gradient(to top,var(--n),transparent);
+  z-index:0;
+}
+/* Acento dorado decorativo */
+.hero-accent{
+  position:absolute;top:0;right:0;
+  width:45vw;height:100%;
+  background:radial-gradient(ellipse at 80% 40%,rgba(196,162,90,0.06) 0%,transparent 65%);
+  z-index:0;
+}
+.hero-content{position:relative;z-index:1;max-width:680px;}
+.hero-eyebrow{display:flex;align-items:center;gap:14px;margin-bottom:24px;}
+.hero-line{width:36px;height:1px;background:var(--o);}
+.hero-eye{font-size:10px;letter-spacing:0.32em;color:var(--o);font-weight:400;}
+h1{font-family:var(--serif);font-size:clamp(42px,5.8vw,76px);font-weight:400;line-height:1.06;margin-bottom:14px;color:var(--w);}
+h1 em{font-style:italic;color:var(--o2);}
+.hero-sub{font-size:14px;color:var(--wt);line-height:1.8;font-weight:300;max-width:480px;margin-bottom:48px;}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap;}
+.btn-gold{background:var(--o);color:var(--n);font-size:10px;letter-spacing:0.24em;font-weight:500;padding:16px 36px;border:none;transition:opacity 0.2s;}
+.btn-gold:hover{opacity:0.88;}
+.btn-ghost{background:transparent;border:1px solid rgba(196,162,90,0.5);color:var(--o);font-size:10px;letter-spacing:0.24em;padding:15px 34px;transition:all 0.25s;}
+.btn-ghost:hover{background:rgba(196,162,90,0.08);border-color:var(--o);}
+.hero-badge{
+  position:absolute;top:140px;right:56px;z-index:1;
+  border:1px solid rgba(196,162,90,0.2);padding:28px 32px;text-align:center;
+  background:rgba(8,8,9,0.6);backdrop-filter:blur(8px);
+}
+.badge-n{font-family:var(--serif);font-size:42px;color:var(--o);font-weight:400;line-height:1;margin-bottom:4px;}
+.badge-l{font-size:9px;letter-spacing:0
